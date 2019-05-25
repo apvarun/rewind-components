@@ -1,0 +1,21 @@
+---
+name: Avatar
+menu: 'Components'
+---
+
+import { Playground, Props } from 'docz'
+import Avatar from '../Avatar/index.jsx'
+import "../style.css"
+import userImg from '../../stories/user.jpg'
+
+# Avatar
+
+<Props of={Avatar} />
+
+## Basic usage
+
+<Playground>
+  <Avatar image={userImg} />
+  <Avatar rounded image={userImg} />
+  <Avatar square image={userImg} />
+</Playground>

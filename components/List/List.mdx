@@ -1,0 +1,29 @@
+---
+name: List
+menu: 'Components'
+---
+
+import { Playground, Props } from 'docz'
+import { List, ListItem, Radio } from '../index.jsx'
+
+# List
+
+<Props of={List} />
+
+## Basic usage
+
+<Playground>
+  <List>
+    <ListItem>Hello List 1</ListItem>
+    <ListItem>Hello List 2</ListItem>
+    <ListItem>Hello List 3</ListItem>
+  </List>
+  <List>
+    <ListItem>
+      <Radio name="list">Radio List 1</Radio>
+    </ListItem>
+    <ListItem>
+      <Radio name="list">Radio List 2</Radio>
+    </ListItem>
+  </List>
+</Playground>

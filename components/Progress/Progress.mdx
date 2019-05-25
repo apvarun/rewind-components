@@ -1,0 +1,42 @@
+---
+name: Progress
+menu: 'Components'
+---
+
+import { Playground, Props } from 'docz'
+import Progress from '../Progress/index.jsx'
+import "../style.css"
+
+# Progress
+
+## Basic usage
+
+<Playground>
+  <Progress />
+  <Progress primary />
+  <Progress success />
+  <Progress dark />
+</Playground>
+
+## Percentage Completed
+
+<Playground>
+  <Progress percent="20"></Progress>
+  <Progress primary percent="40"></Progress>
+  <Progress success percent="60"></Progress>
+  <Progress dark percent="80"></Progress>
+</Playground>
+
+## Percentage Completed With Text
+
+<Playground>
+  <Progress percent="20">20%</Progress>
+  <Progress primary percent="40">40%</Progress>
+  <Progress success percent="60">60%</Progress>
+  <Progress dark percent="80">80%</Progress>
+</Playground>
+
+
+## API
+
+<Props of={Progress} />

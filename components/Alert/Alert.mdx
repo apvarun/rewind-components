@@ -1,0 +1,68 @@
+---
+name: Alert
+menu: 'Components'
+---
+
+import { Playground, Props } from 'docz'
+import Alert from '../Alert/index.jsx'
+import "../style.css"
+
+# Alert
+
+<Props of={Alert} />
+
+## Basic usage
+
+<Playground>
+  <Alert>Hello Alert</Alert>
+  <Alert>
+    <span role="img" aria-label="so cool">
+      😀 😎 👍 💯
+    </span>
+  </Alert>
+  <Alert primary>Primary Alert</Alert>
+  <Alert success>Success Alert</Alert>
+  <Alert error>Error Alert</Alert>
+  <Alert dark>Dark Alert</Alert>
+</Playground>
+
+## Outline-only Alerts
+
+Minimal version of alert messages wih outline. This variant doesn't attract much attraction in the page.
+
+Dark variant is not supported as the white fill is not ideal for the same.
+
+<Playground>
+  <Alert outline>Alert Outlined</Alert>
+  <Alert primary outline>Primary Alert with Outline</Alert>
+  <Alert success outline>Success Alert with Outline</Alert>
+  <Alert error outline>Error Alert with Outline</Alert>
+</Playground>
+
+## Categorized Alerts
+
+Supports custom tags to be added to the alerts, making it easier for categorization.
+
+<Playground>
+  <Alert tag="New">Hello Alert</Alert>
+  <Alert outline tag="Missed">Alert Outlined</Alert>
+  <Alert primary tag="Success">Primary Alert</Alert>
+  <Alert dark tag="Latest">Dark Alert</Alert>
+</Playground>
+
+## Closeable Alerts
+
+Alert messages that can be dismissed.
+
+<Playground>
+  {() => {
+    const closeFunction = () => console.log('Closed');
+    return (
+      <>
+        <Alert tag="New" onClose={closeFunction}>Destroyable Hello Alert</Alert>
+        <Alert outline tag="New" onClose={closeFunction}>Destroyable Outline Alert</Alert>
+        <Alert dark tag="Latest" onClose={closeFunction}>Destroyable Dark Alert</Alert>
+      </>
+    )
+  }}
+</Playground>

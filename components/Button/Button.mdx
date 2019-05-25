@@ -1,0 +1,30 @@
+---
+name: Button
+menu: 'Components'
+---
+
+import { Playground, Props } from 'docz'
+import Button from '../Button/index.jsx'
+import "../style.css"
+
+# Button
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Button>Hello Button</Button>
+  <Button>
+    <span role="img" aria-label="so cool">
+      😀 😎 👍 💯
+    </span>
+  </Button>
+  <Button outline>Hello Button Outlined</Button>
+  <Button disabled>Hello Disabled Button</Button>
+  <Button primary>Primary Button</Button>
+  <Button primary outline>Primary Button with Outline</Button>
+  <Button success>Primary Button</Button>
+  <Button success outline>Primary Button</Button>
+  <Button dark>Dark Button</Button>
+</Playground>

@@ -1,0 +1,26 @@
+---
+name: Chip
+menu: 'Components'
+---
+
+import { Playground, Props } from 'docz'
+import { Chip } from '../index.jsx'
+
+# Chip
+
+<Props of={Chip} />
+
+## Basic usage
+
+
+<Playground>
+  {() => {
+     const clicked = () => console.log('Clicked')
+     return (
+      <>
+        <Chip>Hello Chip</Chip>
+        <Chip onClose={clicked}>Hello Chip with a Clicker</Chip>
+      </>
+     )
+  }}
+</Playground>

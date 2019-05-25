@@ -1,0 +1,31 @@
+{
+  "name": "Rewind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.6",
+    "docz": "^1.2.0",
+    "docz-plugin-postcss": "^0.0.1",
+    "docz-theme-default": "^1.2.0",
+    "tailwindcss": "^1.0.0"
+  }
+}
