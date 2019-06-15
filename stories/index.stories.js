@@ -8,7 +8,7 @@ import { Welcome } from '@storybook/react/demo';
 
 import { Button, Card, Avatar, Chip, List, ListItem, Divider, Radio, NavBar } from '../components'
 
-import userImg from './user.jpg'
+const userImg = "https://randomuser.me/api/portraits/women/68.jpg";
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
