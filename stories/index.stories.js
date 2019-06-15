@@ -63,4 +63,14 @@ storiesOf('NavBar', module)
     <NavBar>
       Content
     </NavBar>
+  ))
+  .add('primary', () => (
+    <NavBar primary>
+      Content
+    </NavBar>
+  ))
+  .add('dark', () => (
+    <NavBar dark>
+      Content
+    </NavBar>
   ));
