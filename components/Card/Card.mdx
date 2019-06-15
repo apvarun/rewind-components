@@ -4,8 +4,7 @@ menu: 'Components'
 ---
 
 import { Playground, Props } from 'docz'
-import { Card } from '../index.jsx'
-import userImg from '../../stories/user.jpg'
+import { Card } from '../index.js'
 
 # Card
 
@@ -20,7 +19,7 @@ import userImg from '../../stories/user.jpg'
   {() => {
     const title = 'Natasha Kirovska';
     const description = 'Natasha Kirovska is user interface designer that helps startups and established companies develop their products and grow their businesses.';
-    return <Card heading={title} image={userImg} style={{width:300}}>{description}</Card>
+    return <Card heading={title} image="https://randomuser.me/api/portraits/women/68.jpg" style={{width:300}}>{description}</Card>
   }}
 </Playground>
 
