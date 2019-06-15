@@ -26,7 +26,7 @@ export default {
   plugins: [
     external(),
     postcss({
-      modules: true
+      extract: true
     }),
     url(),
     svgr(),
@@ -35,6 +35,8 @@ export default {
     }),
     resolve(),
     commonjs(),
-    visualizer(),
+    ...process.env.NODE_ENV !== 'production'
+      ? [visualizer()]
+      : [],
   ]
 }
