@@ -8,13 +8,19 @@ import { Radio } from '../index.jsx'
 
 # Radio
 
-<Props of={Radio} />
-
 ## Basic usage
 
 <Playground>
+<form>
   <Radio>Hello Radio</Radio>
-  <Radio checked>Hello Radio</Radio>
-  <Radio checked disabled>Hello Radio</Radio>
+  <Radio checked onChange={() => {}}>Hello Radio</Radio>
+</form>
+<form>
+  <Radio checked disabled onChange={() => {}}>Hello Radio</Radio>
   <Radio disabled>Hello Radio</Radio>
+</form>
 </Playground>
+
+## API
+
+<Props of={Radio} />

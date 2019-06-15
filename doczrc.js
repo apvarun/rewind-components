@@ -17,5 +17,8 @@ export default {
       name: "Components",
       menu: ["Avatar", "Button", "Radio", "Card", "List", "Divider", "NavBar", "Chip"]
     }
-  ]
+  ],
+  notUseSpecifiers: true,
+  filterComponents: (files) =>
+    files.filter(filepath => /[w-]*.(js|jsx|ts|tsx)$/.test(filepath))
 };
