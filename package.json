@@ -17,7 +17,7 @@
     "build-storybook": "build-storybook",
     "docz:dev": "docz dev",
     "docz:build": "docz build && yarn run docz:postbuild",
-    "docz:postbuild": "cpy ./public/CNAME ./.docz/dist && cpy ./.docz/dist/index.html ./.docz/dist --rename=404.html",
+    "docz:postbuild": "cpy ./public/* ./.docz/dist && cpy ./.docz/dist/index.html ./.docz/dist --rename=404.html",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "cross-env NODE_ENV=production rollup -c",

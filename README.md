@@ -6,6 +6,8 @@
 
 Ready to use components for your next project.
 
+![Rewind Logo](public/rewind-logo.png)
+
 * Optimized Build with small footprint (2-3k gzipped)
 * Pure React Components
 * Minimal Design
