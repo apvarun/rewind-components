@@ -5,11 +5,18 @@ cache:
   directories:
     - "node_modules"
 script:
-  - yarn deploy
+  - yarn predeploy
 deploy:
-  skip_cleanup: true
-  provider: npm
-  email: $NPM_USERNAME
-  api_key: $NPM_TOKEN
-  on:
-    branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    keep_history: true
+    local_dir: .docz/dist
+    on:
+      branch: master
+  - provider: npm
+    skip_cleanup: true
+    email: $NPM_USERNAME
+    api_key: $NPM_TOKEN
+    on:
+      branch: master
