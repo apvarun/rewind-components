@@ -16,7 +16,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "docz:dev": "docz dev",
-    "docz:build": "docz build",
+    "docz:build": "docz build && yarn run docz:postbuild",
+    "docz:postbuild": "cpy ./public/CNAME ./.docz/dist && cpy ./.docz/dist/index.html ./.docz/dist --rename=404.html",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "cross-env NODE_ENV=production rollup -c",
@@ -76,6 +77,7 @@
     "dist"
   ],
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.2.0"
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "cpy-cli": "^2.0.0"
   }
 }
