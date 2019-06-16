@@ -45,3 +45,12 @@ And make sure to use purgeCSS or UnCSS to remove unused CSS frmo your bundle.
 ### Browser support
 
 Rewind Components are supported in Chrome, Firefox, Safari, and Microsoft Edge.
+
+### Built With
+
+* **Tailwind CSS** [🔗](https://tailwindcss.com) - for CSS styles
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/apvarun/rewind-components/blob/master/LICENSE) file for details.
+

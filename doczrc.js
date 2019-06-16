@@ -3,7 +3,7 @@ import postcssConfig from "./postcss.config";
 
 export default {
   title: "Rewind Components",
-  description: "",
+  description: "Ready to use components for your next project",
   plugins: [
     css({
       preprocessor: "postcss",
@@ -23,5 +23,6 @@ export default {
     files.filter(filepath => /[w-]*.(js|jsx|ts|tsx)$/.test(filepath)),
   htmlContext: {
     favicon: 'favicon.ico'
-  }
+  },
+  indexHtml: './docz-template.html'
 };
