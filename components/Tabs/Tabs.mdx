@@ -1,0 +1,42 @@
+---
+name: Tabs
+menu: 'Components'
+---
+
+import { Playground, Props } from 'docz'
+import { Tabs, Tab } from '../index.js'
+
+# Tabs
+
+## Basic usage
+
+<Playground>
+<Tabs>
+  <Tab label="Tab 1">
+    Hello Tab 1
+  </Tab>
+  <Tab label="Tab 2">
+    Hello Tab 2
+  </Tab>
+</Tabs>
+</Playground>
+
+### Outline Tabs
+
+<Playground>
+<Tabs defaultTab={2} outline>
+  <Tab label="Tab 1">
+    Hello Tab 1
+  </Tab>
+  <Tab label="Tab 2">
+    Hello Tab 2
+  </Tab>
+  <Tab label="Tab 3">
+    Hello Tab 3
+  </Tab>
+</Tabs>
+</Playground>
+
+## API
+
+<Props of={Tabs} />

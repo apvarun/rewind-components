@@ -8,8 +8,9 @@ import Divider from "./Divider/index.jsx";
 import Radio from "./Radio/index.jsx";
 import NavBar from "./NavBar/index.jsx";
 import Alert from "./Alert/index.jsx";
+import { Tabs, Tab } from "./Tabs/index.jsx"
 
 import "./style.css";
 
-export { Button, Card, Avatar, Alert, Chip, List, ListItem, Divider, Radio, NavBar };
-export default { Button, Card, Avatar, Alert, Chip, List, ListItem, Divider, Radio, NavBar };
+export { Button, Card, Avatar, Alert, Chip, List, ListItem, Divider, Radio, NavBar, Tabs, Tab };
+export default { Button, Card, Avatar, Alert, Chip, List, ListItem, Divider, Radio, NavBar, Tabs, Tab };
